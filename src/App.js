@@ -1,10 +1,11 @@
 import React from 'react'
+import Layout from './features/NerdCard/pages/Layout'
 
 const App = () => {
   return (
-    <h1 className="h-screen px-4 py-8 bg-gradient-to-b from-purple-900 to-purple-700 text-white">
-      Hello friend! My  name is an.
-    </h1>
+    <div>
+      <Layout />
+    </div>
   )
 }
 
