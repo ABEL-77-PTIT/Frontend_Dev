@@ -1,10 +1,10 @@
 import React from 'react'
-import Layout from './features/NerdCard/pages/Layout'
+import NerdCard from './features/NerdCard/pages/NerdCard'
 
 const App = () => {
   return (
     <div>
-      <Layout />
+      <NerdCard />
     </div>
   )
 }

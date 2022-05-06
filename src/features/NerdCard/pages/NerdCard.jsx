@@ -3,7 +3,7 @@ import Content from '../components/Content/Content'
 import Navbar from '../components/Navbar/Navbar'
 import Slogan from '../components/Slogan/Slogan'
 
-const Layout = () => {
+const NerdCard = () => {
     const [windowSize, setWindowSize] = useState({
         width: undefined,
         height: undefined
@@ -38,4 +38,4 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default NerdCard
