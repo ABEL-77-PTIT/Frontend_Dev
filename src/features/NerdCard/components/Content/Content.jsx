@@ -1,6 +1,6 @@
 import { FaUser } from "react-icons/fa";
 import { useSpring, animated } from "react-spring";
-import checkIconMobile from "../../../../assets/NerdCard/mobile/checkpoint.svg";
+import checkIconMobile from "../../../../assets/images/NerdCard/mobile/checkpoint.svg";
 import { BsFillCreditCardFill } from "react-icons/bs";
 const Content = () => {
   const customer = useSpring({ customers: 10245, from: { customers: 0 } });

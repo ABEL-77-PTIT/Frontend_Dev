@@ -1,13 +1,14 @@
 import React from 'react'
-import Coffee from './features/CoffeeShop/pages/Coffee'
-import NerdCard from './features/NerdCard/pages/NerdCard'
+import CommonRoutes from './app/Routes/CommonRoutes'
+import DefaultLayout from './features/Common/Layout/DefaultLayout'
 
 const App = () => {
   return (
-    <div>
-      <NerdCard />
-      <Coffee />
-    </div>
+    <>
+      <DefaultLayout className="font-sora">
+          <CommonRoutes />
+      </DefaultLayout>
+    </>
   )
 }
 

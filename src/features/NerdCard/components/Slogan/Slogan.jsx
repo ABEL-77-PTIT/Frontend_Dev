@@ -1,4 +1,4 @@
-import Cards from "../../../../assets/NerdCard/desktop/isocard.svg";
+import Cards from "../../../../assets/images/NerdCard/desktop/isocard.svg";
 const Slogan = () => {
   return (
     <section className="text-36 relative my-14 font-extrabold md:my-28 md:grid md:grid-cols-3 md:items-center md:text-48">
