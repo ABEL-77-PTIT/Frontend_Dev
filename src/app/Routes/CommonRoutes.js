@@ -1,12 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Coffee from '../../features/CoffeeShop/pages/Coffee'
+import Home from '../../features/Common/Layout/Home'
 import NerdCard from '../../features/NerdCard/pages/NerdCard'
 const CommonRoutes = () => {
   return (
     <Routes>
         <Route path="/*">
-            <Route path="" index element={"Home"} />
+            <Route path="" index element={<Home />} />
             <Route path="auth/*">
                 <Route path="login" element={"Login"} />
                 <Route path="register" element={"Register"} />
