@@ -20,7 +20,7 @@ const Home = () => {
                 className="mySwiper"
             >
                 <SwiperSlide className="mb-4">
-                    <div className="max-w-sm min-w-[384px] w-full lg:max-w-full lg:flex">
+                    <div className="min-w-[384px] lg:max-w-full lg:flex">
                         <div
                             className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                             style={{
@@ -53,7 +53,7 @@ const Home = () => {
                                         <p className="text-gray-600">May 5</p>
                                     </div>
                                 </div>
-                                <button className="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 border-b-4 border-teal-700 hover:border-teal-500 rounded">
+                                <button className="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 border-b-4 border-teal-700 hover:border-teal-500 rounded transition duration-0 hover:duration-200 ease-in-out">
                                     View more.
                                 </button>
                             </div>
@@ -62,7 +62,7 @@ const Home = () => {
                 </SwiperSlide>
 
                 <SwiperSlide className="mb-4">
-                    <div className="max-w-sm min-w-sm min-w-[384px] w-full lg:max-w-full lg:flex">
+                    <div className="max-w-sm min-w-[384px] w-full lg:max-w-full lg:flex">
                         <div
                             className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                             style={{
