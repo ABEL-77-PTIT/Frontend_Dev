@@ -5,11 +5,11 @@ import { ImYoutube } from 'react-icons/im';
 
 const Sidebar = () => {
     return (
-        <div className="w-auto min-h-[79vh] fixed top-10 left-0 bottom-36 py-5 m-8 bg-[#fdfdfd] rounded-xl">
+        <div className="w-auto mt-16 pb-5 m-8 bg-[#fdfdfd] rounded-xl">
             <div className="flex flex-col items-center">
                 <span className="m-3 p-2 w-[80%] border-t-2 border-b-2 border-[#a7a4a4] text-16 text-[#222] font-semibold text-center">ABOUT ME</span>
-                <img src="https://avatars.githubusercontent.com/u/70141159?v=4" alt="Truong Hung An" title="Truong Hung An" className="w-80 h-80 rounded-3xl mb-4" />
-                <p className="px-8">Lập trình viên Front-end. Đã từng học tại Học viện Công nghệ bưu chính viễn thông Hồ Chí Minh.</p>
+                <img src="https://avatars.githubusercontent.com/u/70141159?v=4" alt="Truong Hung An" title="Truong Hung An" className="w-80 h-80 rounded-3xl mb-4 mt-4" />
+                <p className="px-8 text-center">Lập trình viên Front-end. Đã từng học tại Học viện Công nghệ bưu chính viễn thông Hồ Chí Minh.</p>
             </div>
             <div className="flex flex-col items-center">
                 <span className="m-3 p-2 w-[80%] border-t-2 border-b-2 border-[#a7a4a4] text-16 text-[#222] font-semibold text-center">CATEGORIES</span>

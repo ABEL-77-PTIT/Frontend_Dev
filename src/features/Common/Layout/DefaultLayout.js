@@ -6,7 +6,7 @@ const DefaultLayout = ({ children }) => {
   return (
     <>
         <Header />
-        <div className="mt-20">
+        <div>
             {children}
         </div>
         <Footer />

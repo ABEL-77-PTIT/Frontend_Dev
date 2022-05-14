@@ -1,151 +1,136 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "./home.css";
-import { Navigation } from "swiper";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const Home = () => {
     return (
-        <div className="fixed top-20 left-[40vw] bottom-40">
-            <h1 className="text-center text-teal-800 text-32">
-                What do you want from me??
-            </h1>
-            <Swiper
-                navigation={true}
-                modules={[Navigation]}
-                loop={true}
-                className="mySwiper"
-            >
-                <SwiperSlide className="mb-4">
-                    <div className="min-w-[384px] lg:max-w-full lg:flex">
-                        <div
-                            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style={{
-                                backgroundImage:
-                                    "url('https://readtoolead.com/wp-content/uploads/2019/05/coffee.jpg')",
-                            }}
-                            title="Coffee with me!!"
-                        ></div>
-                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                            <div className="mb-8">
-                                <div className="text-gray-900 font-bold text-xl mb-2">
-                                    Can coffee make you a better developer?
-                                </div>
-                                <p className="text-gray-700 text-base">
-                                    Enjoy it now. A cup of coffee a day keeps
-                                    you full of energy.
-                                </p>
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <div className="flex items-center">
-                                    <img
-                                        className="w-10 h-10 rounded-full mr-4"
-                                        src="https://readtoolead.com/wp-content/uploads/2019/05/coffee.jpg"
-                                        alt="Avatar of Jonathan Reinink"
-                                    />
-                                    <div className="text-sm">
-                                        <p className="text-gray-900 leading-none">
-                                            Truong Hung An
-                                        </p>
-                                        <p className="text-gray-600">May 5</p>
-                                    </div>
-                                </div>
-                                <button className="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 border-b-4 border-teal-700 hover:border-teal-500 rounded transition duration-0 hover:duration-200 ease-in-out">
-                                    View more.
-                                </button>
-                            </div>
-                        </div>
+        <div className="flex flex-col w-full md:flex md:flex-row md:px-10">
+            <Sidebar/>
+            <div className="mt-12 mx-auto md:mt-16 lg:px-10">
+                <h1 className="text-center text-teal-800 text-32 mb-10">
+                    What do you want from me??
+                </h1>
+                <div className="grid grid-cols-1 mb-10 mx-2 md:mx-0 lg:grid-cols-2 lg:gap-6">
+                    <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                        <a href="!#">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Would you like to have a cup of coffee with me?
+                            </h5>
+                        </a>
+                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Come with me and choose a great drink for your new
+                            day!!.
+                        </p>
+                        <a
+                            href="!#"
+                            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                            Read more
+                            <svg
+                                className="ml-2 -mr-1 w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </a>
                     </div>
-                </SwiperSlide>
 
-                <SwiperSlide className="mb-4">
-                    <div className="max-w-sm min-w-[384px] w-full lg:max-w-full lg:flex">
-                        <div
-                            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style={{
-                                backgroundImage:
-                                    "url('https://readtoolead.com/wp-content/uploads/2019/05/coffee.jpg')",
-                            }}
-                            title="Woman holding a mug"
-                        ></div>
-                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                            <div className="mb-8">
-                                <div className="text-gray-900 font-bold text-xl mb-2">
-                                    Do you want an automatic billing system?
-                                </div>
-                                <p className="text-gray-700 text-base">
-                                    The system helps you to pay yourself, just
-                                    scan the QR code and you're done.
-                                </p>
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <div className="flex items-center">
-                                    <img
-                                        className="w-10 h-10 rounded-full mr-4"
-                                        src="https://readtoolead.com/wp-content/uploads/2019/05/coffee.jpg"
-                                        alt="Avatar of Jonathan Reinink"
-                                    />
-                                    <div className="text-sm">
-                                        <p className="text-gray-900 leading-none">
-                                            Truong Hung An
-                                        </p>
-                                        <p className="text-gray-600">May 5</p>
-                                    </div>
-                                </div>
-                                <button className="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 border-b-4 border-teal-700 hover:border-teal-500 rounded">
-                                    View more.
-                                </button>
-                            </div>
-                        </div>
+                    <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                        <a href="!#">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                You want to change payment via e-wallet?
+                            </h5>
+                        </a>
+                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            This will be the place to provide you with a faster
+                            and better payment service than ever.
+                        </p>
+                        <a
+                            href="!#"
+                            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                            Read more
+                            <svg
+                                className="ml-2 -mr-1 w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </a>
                     </div>
-                </SwiperSlide>
 
-                <SwiperSlide className="mb-4">
-                    <div className="max-w-sm min-w-[384px] w-full lg:max-w-full lg:flex">
-                        <div
-                            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style={{
-                                backgroundImage:
-                                    "url('https://readtoolead.com/wp-content/uploads/2019/05/coffee.jpg')",
-                            }}
-                            title="Woman holding a mug"
-                        ></div>
-                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                            <div className="mb-8">
-                                <div className="text-gray-900 font-bold text-xl mb-2">
-                                    Do you want to stay up to date with the
-                                    latest technology news?
-                                </div>
-                                <p className="text-gray-700 text-base">
-                                    This is a place to share programming
-                                    knowledge, technology, programmer life.
-                                </p>
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <div className="flex items-center">
-                                    <img
-                                        className="w-10 h-10 rounded-full mr-4"
-                                        src="https://readtoolead.com/wp-content/uploads/2019/05/coffee.jpg"
-                                        alt="Avatar of Jonathan Reinink"
-                                    />
-                                    <div className="text-sm">
-                                        <p className="text-gray-900 leading-none">
-                                            Truong Hung An
-                                        </p>
-                                        <p className="text-gray-600">May 5</p>
-                                    </div>
-                                </div>
-                                <button className="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 border-b-4 border-teal-700 hover:border-teal-500 rounded">
-                                    View more.
-                                </button>
-                            </div>
-                        </div>
+                    <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                        <a href="!#">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                News page about technology and programmer's
+                                life.
+                            </h5>
+                        </a>
+                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Update the latest technology information, share
+                            about the daily life of programmers.
+                        </p>
+                        <a
+                            href="!#"
+                            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                            Read more
+                            <svg
+                                className="ml-2 -mr-1 w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </a>
                     </div>
-                </SwiperSlide>
-            </Swiper>
+
+                    <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                        <a href="!#">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                An's channel, where to share good videos
+                            </h5>
+                        </a>
+                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Make videos about music, life, programming.
+                        </p>
+                        <a
+                            href="!#"
+                            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                            Read more
+                            <svg
+                                className="ml-2 -mr-1 w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

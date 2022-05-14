@@ -1,11 +1,10 @@
-
+/* 
 .swiper {
     width: 800px;
     height: 400px;
   }
   
   .swiper-slide {
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -15,4 +14,4 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+  } */
