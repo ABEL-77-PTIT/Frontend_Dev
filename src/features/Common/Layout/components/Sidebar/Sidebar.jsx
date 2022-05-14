@@ -5,7 +5,7 @@ import { ImYoutube } from 'react-icons/im';
 
 const Sidebar = () => {
     return (
-        <div className="w-auto mt-16 pb-5 m-8 bg-[#fdfdfd] rounded-xl">
+        <div className="w-auto mt-16 pb-5 md:pb-20 m-8 bg-[#fdfdfd] rounded-xl">
             <div className="flex flex-col items-center">
                 <span className="m-3 p-2 w-[80%] border-t-2 border-b-2 border-[#a7a4a4] text-16 text-[#222] font-semibold text-center">ABOUT ME</span>
                 <img src="https://avatars.githubusercontent.com/u/70141159?v=4" alt="Truong Hung An" title="Truong Hung An" className="w-80 h-80 rounded-3xl mb-4 mt-4" />
