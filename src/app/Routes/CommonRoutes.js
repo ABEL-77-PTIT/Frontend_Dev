@@ -1,24 +1,33 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Coffee from '../../features/CoffeeShop/pages/Coffee'
-import Home from '../../features/Common/Layout/Home'
-import NerdCard from '../../features/NerdCard/pages/NerdCard'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Coffee from "../../features/CoffeeShop/pages/Coffee";
+import Home from "../../features/Common/Layout/Home";
+import MyBlogs from "../../features/MyBlogs/pages/MyBlogs";
+import MyChannel from "../../features/MyChannel/pages/MyChannel";
+import NerdCard from "../../features/NerdCard/pages/NerdCard";
 const CommonRoutes = () => {
-  return (
-    <Routes>
-        <Route path="/*">
-            <Route path="" index element={<Home />} />
-            <Route path="auth/*">
-                <Route path="login" element={"Login"} />
-                <Route path="register" element={"Register"} />
-                <Route path="forgot-password" element={"ForgotPassword"} />
-                <Route path="recovery-password" element={"RecoveryPassword"} />
+    return (
+        <Routes>
+            <Route path="/*">
+                <Route path="" index element={<Home />} />
+                <Route path="auth/*">
+                    <Route path="login" element={"Login"} />
+                    <Route path="register" element={"Register"} />
+                    <Route path="forgot_password" element={"ForgotPassword"} />
+                    <Route
+                        path="recovery_password"
+                        element={"RecoveryPassword"}
+                    />
+                </Route>
+                <Route path="my/*">
+                    <Route path="nerd_card" element={<NerdCard />} />
+                    <Route path="coffee_shop" element={<Coffee />} />
+                    <Route path="blogs" element={<MyBlogs />} />
+                    <Route path="antube" element={<MyChannel />} />
+                </Route>
             </Route>
-            <Route path="nerd-card" element={<NerdCard />} />
-            <Route path="my-coffee" element={<Coffee />} />
-        </Route>
-    </Routes>
-  )
-}
+        </Routes>
+    );
+};
 
-export default CommonRoutes
+export default CommonRoutes;
