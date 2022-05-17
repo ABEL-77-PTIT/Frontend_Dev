@@ -1,0 +1,36 @@
+.overview {
+    background-image: url("https://batdongsangroup.vn/upload/2021/10/phoi-canhtt-city-millennia-750x500.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.overview__container {
+    padding: 40px;
+}
+
+.overview__content {
+    border: 5px solid var(--primaryColor);
+    max-width: 960px;
+    min-height: 560px;
+    margin: 30px auto 30px 50px;
+    padding: 30px 30px 30px 50px;
+    color: white;
+}
+
+.overview__content h3 {
+    font-family: var(--fontFamily2);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.overview__content p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.overview__content p b {
+    margin: 0 0 0 10px;
+}

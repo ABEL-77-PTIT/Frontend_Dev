@@ -1,0 +1,154 @@
+/* @media only screen and (max-width: 849px){
+} */
+.header {
+    background-color: var(--backgroundColorLight);
+}
+
+.scroll {
+    background-color: white;
+    /* opacity: 0.8; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    transition: all 0.7s ease-in;
+}
+
+.header__container {
+    height: 80px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo a {
+    display: block;
+}
+
+.header__logo img {
+    height: 80px;
+    width: 160px;
+}
+
+.header__navBars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navBars--lists {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header__navBars--lists li {
+    padding-right: 8px;
+}
+.header__navBars--lists li a {
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 25px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.header__navBars--lists li a:hover {
+    color: var(--primaryColor);
+    transition: all 0.2s ease;
+}
+
+.header__search {
+    font-size: 24px;
+    position: relative;
+}
+
+.header__search:hover {
+    color: var(--primaryColor);
+}
+
+.header__search .search__text {
+    border: 4px solid var(--primaryColor);
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    right: -30px;
+    width: 250px;
+    padding: 15px;
+    display: none;
+}
+
+.header__search .search__text div {
+    display: flex;
+}
+
+.button__search:focus {
+    outline: none;
+}
+
+.icon__search {
+    background-color: var(--primaryColor);
+    width: 40px;
+    height: 40px;
+    color: white;
+    padding: 7px;
+}
+
+.header__search:hover .search__text {
+    display: block;
+    transition: fadeIn 1s ease;
+    z-index: 1;
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header__search .search__text input {
+    width: 100%;
+    border: 1px solid var(--primaryColor);
+    padding: 0px 10px;
+}
+
+.header__search .search__text input:focus {
+    outline: none;
+}
+
+.header__search:before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 40%;
+    height: 12px;
+    width: 100%;
+}
+
+.header__search:hover .search__text:after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    border-width: 12px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--primaryColor) transparent;
+}
+.header__mobile--navBars {
+    display: none;
+}
+.header__mobile--bars {
+    display: none;
+}

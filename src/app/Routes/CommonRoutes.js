@@ -2,9 +2,10 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Coffee from "../../features/CoffeeShop/pages/Coffee";
 import Home from "../../features/Common/Layout/Home";
-import MyBlogs from "../../features/MyBlogs/pages/MyBlogs";
 import MyChannel from "../../features/MyChannel/pages/MyChannel";
 import NerdCard from "../../features/NerdCard/pages/NerdCard";
+import CitiAlto from "../../features/CitiAlto/pages/CitiAlto";
+import BlogsManagement from "../../features/MyBlogs/BlogsManagement";
 const CommonRoutes = () => {
     return (
         <Routes>
@@ -22,8 +23,9 @@ const CommonRoutes = () => {
                 <Route path="my/*">
                     <Route path="nerd_card" element={<NerdCard />} />
                     <Route path="coffee_shop" element={<Coffee />} />
-                    <Route path="blogs" element={<MyBlogs />} />
                     <Route path="antube" element={<MyChannel />} />
+                    <Route path="real_estate" element={<CitiAlto />} />
+                    <Route path="blogs/*" element={<BlogsManagement />} />
                 </Route>
             </Route>
         </Routes>
