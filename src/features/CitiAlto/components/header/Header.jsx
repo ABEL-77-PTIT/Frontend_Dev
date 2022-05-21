@@ -1,5 +1,6 @@
 import React from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
+import { Link } from "react-router-dom";
 // https://github.com/safak/youtube/tree/react-portfolio/src
 
 import "./header.css";
@@ -21,12 +22,12 @@ const Header = () => {
             <div className="header__container">
                 <div className="header__content">
                     <div className="header__logo">
-                        <a href="#!">
+                        <Link to="/my/real_estate">
                             <img
                                 src="http://mauweb.monamedia.net/canhocitialto/wp-content/uploads/2019/02/logo.jpg"
                                 alt="Logo_citiAlto"
                             />
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="header__navBars">
