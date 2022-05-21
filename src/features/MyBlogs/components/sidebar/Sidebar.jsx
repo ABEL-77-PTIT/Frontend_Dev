@@ -6,7 +6,7 @@ class Sidebar extends Component {
             <div className="sidebar">
                 <div className="sidebar__item">
                     <span className="sidebar__title">ABOUT ME</span>
-                    <img src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg" alt="" />
+                    <img src="https://avatars.githubusercontent.com/u/70141159?v=4" alt="Truong Hung An" title="Truong Hung An" className="w-80 h-80 rounded-3xl mb-4 mt-4" />
                     <p>Lập trình viên Front-end. Đã từng học tại Học viện Công nghệ bưu chính viễn thông Hồ Chí Minh.</p>
                 </div>
                 <div className="sidebar__item">

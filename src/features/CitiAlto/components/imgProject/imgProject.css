@@ -9,7 +9,6 @@
 }
 
 .imgProject__content {
-
 }
 
 .imgProject__content > h1 {
@@ -57,7 +56,7 @@
 
 .active__img--content {
     display: block;
-}   
+}
 
 /* xử lý phần hình ảnh */
 .apartment__img {
@@ -88,12 +87,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 0;  
+    left: 0;
 }
 
-
 .apartment__left:hover {
-    box-shadow: inset 0 0 0 2000px #6b6262ab; 
+    box-shadow: inset 0 0 0 2000px #6b6262ab;
     transition: all 0.5s ease-out;
 }
 
@@ -117,15 +115,15 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 0;  
+    left: 0;
 }
 
 .apartment__center--top:hover {
-    box-shadow: inset 0 0 0 2000px #6b6262ab; 
+    box-shadow: inset 0 0 0 2000px #6b6262ab;
     transition: all 0.5s ease-out;
 }
 
-.apartment__center--bottom1 {
+/* .apartment__center--bottom1 {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 4;
@@ -142,30 +140,58 @@
     grid-column-start: 6;
     grid-column-end: 8;
     background-image: url("http://mauweb.monamedia.net/canhocitialto/wp-content/uploads/2019/02/gall2.jpg");
-    background-repeat: no-repeat;
-    position: relative;
-    background-position: 50% 50%;
-    background-size: cover;
 }
 .apartment__center--bottom3 {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 8;
     grid-column-end: 10;
-    background-image: url("http://mauweb.monamedia.net/canhocitialto/wp-content/uploads/2019/02/gall3.jpg");
     background-repeat: no-repeat;
     position: relative;
     background-position: 50% 50%;
     background-size: cover;
+} */
+
+.apartment__center--bottom-left {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-image: url("http://mauweb.monamedia.net/canhocitialto/wp-content/uploads/2019/02/gall2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
-.apartImg {
+.apartment__center--bottom-center {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    background-image: url("http://mauweb.monamedia.net/canhocitialto/wp-content/uploads/2019/02/gall3.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.apartment__center--bottom-right {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 8;
+    grid-column-end: 10;
+    background-image: url("http://mauweb.monamedia.net/canhocitialto/wp-content/uploads/2019/02/gall4.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+/* .apartImg {
+
 }
 
 .apartImg img {
-    /* width: 100px;
-    height: auto; */
-}
+    width: 100px;
+} */
 
 .apartment__right {
     grid-column-start: 10;
@@ -187,14 +213,13 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 0;  
+    left: 0;
 }
 
 .apartment__right:hover {
-    box-shadow: inset 0 0 0 2000px #6b6262ab; 
+    box-shadow: inset 0 0 0 2000px #6b6262ab;
     transition: all 0.5s ease-out;
 }
-
 
 .ground__img {
     display: grid;
@@ -208,9 +233,9 @@
 }
 
 .otherUtilities {
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .otherUtilities img {
-    width: 260px;
+    width: 300px;
 }

@@ -5,8 +5,7 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="header__title">
-          <span className="header__titleSm">React</span>
-          <span className="header__titleLg">Blog</span>
+          <span className="header__titleLg">An Blog</span>
         </div>
         <img
           className="header__img"

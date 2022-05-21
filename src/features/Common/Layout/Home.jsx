@@ -13,23 +13,23 @@ const Home = () => {
                     <h1 className="text-center text-teal-800 text-32 mb-10">
                         What do you want from me??
                     </h1>
-                    <div className="grid grid-cols-1 mb-10 mx-2 md:mx-0 lg:grid-cols-2 lg:gap-6">
-                        <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                    <div className="grid grid-cols-1 gap-y-6 mb-10 mx-2 md:mx-0 lg:grid-cols-2 lg:gap-6">
+                        <div className="p-6 max-w-full lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
                             <Link to="my/coffee_shop">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                     Would you like to have a cup of coffee with
                                     me?
                                 </h5>
                             </Link>
-                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            <p className="mb-10 font-normal text-gray-700 dark:text-gray-400">
                                 Come with me and choose a great drink for your
                                 new day!!.
                             </p>
                             <Link
                                 to="my/coffee_shop"
-                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
                             >
-                                Read more
+                                Views UI details.
                                 <svg
                                     className="ml-2 -mr-1 w-4 h-4"
                                     fill="currentColor"
@@ -45,21 +45,21 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                        <div className="p-6 max-w-full lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
                             <Link to="my/nerd_card">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                     You want to change payment via e-wallet?
                                 </h5>
                             </Link>
-                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            <p className="mb-10 font-normal text-gray-700 dark:text-gray-400">
                                 This will be the place to provide you with a
                                 faster and better payment service than ever.
                             </p>
                             <Link
                                 to="my/nerd_card"
-                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
                             >
-                                Read more
+                                Views UI details.
                                 <svg
                                     className="ml-2 -mr-1 w-4 h-4"
                                     fill="currentColor"
@@ -75,22 +75,22 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                        <div className="p-6 max-w-full lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
                             <Link to="my/blogs">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                     News page about technology and programmer's
                                     life.
                                 </h5>
                             </Link>
-                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            <p className="mb-10 font-normal text-gray-700 dark:text-gray-400">
                                 Update the latest technology information, share
                                 about the daily life of programmers.
                             </p>
                             <Link
                                 to="my/blogs"
-                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                             >
-                                Read more
+                                Views UI details.
                                 <svg
                                     className="ml-2 -mr-1 w-4 h-4"
                                     fill="currentColor"
@@ -106,20 +106,20 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                        <div className="p-6 max-w-full lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
                             <Link to="my/antube">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                     An's channel, where to share good videos
                                 </h5>
                             </Link>
-                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            <p className="mb-10 font-normal text-gray-700 dark:text-gray-400">
                                 Make videos about music, life, programming.
                             </p>
                             <Link
                                 to="my/antube"
-                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                             >
-                                Read more
+                                Views UI details.
                                 <svg
                                     className="ml-2 -mr-1 w-4 h-4"
                                     fill="currentColor"
@@ -135,20 +135,21 @@ const Home = () => {
                             </Link>
                         </div>
 
-                        <div className="p-6 max-w-full mb-5 lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
+                        <div className="p-6 max-w-full lg:mb-0 bg-white rounded-lg border border-gray-200 shadow-md ">
                             <Link to="my/real_estate">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    An's channel, where to share good videos
+                                    Real Estate Website
                                 </h5>
                             </Link>
-                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                Make videos about music, life, programming.
+                            <p className="mb-10 font-normal text-gray-700 dark:text-gray-400">
+                                Choose luxury real estate, a place to sublimate
+                                emotions.
                             </p>
                             <Link
                                 to="my/real_estate"
-                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                             >
-                                Read more
+                                Views UI details.
                                 <svg
                                     className="ml-2 -mr-1 w-4 h-4"
                                     fill="currentColor"

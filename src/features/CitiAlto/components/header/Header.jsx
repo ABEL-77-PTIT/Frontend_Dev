@@ -14,7 +14,7 @@ const Header = () => {
     //             h.classList.remove("scroll");
     //         }
     //     });
-    // });
+    // });   
 
     return (
         <div id="header" className="header scroll">
@@ -32,7 +32,7 @@ const Header = () => {
                     <div className="header__navBars">
                         <ul className="header__navBars--lists">
                             <li>
-                                <a href="#!">TRANG CHỦ</a>
+                                <a href="#banner">TRANG CHỦ</a>
                             </li>
                             <li>
                                 <a href="#introduce">GIỚI THIỆU</a>

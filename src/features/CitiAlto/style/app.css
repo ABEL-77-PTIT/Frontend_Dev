@@ -1,8 +1,8 @@
 .app {
     height: 100vh;
-    position: relative;
 }
 
 .section {
     width: 100%;
+    padding-top: 80px;
 }

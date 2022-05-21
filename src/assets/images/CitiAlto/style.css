@@ -1,50 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,700&family=Red+Hat+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,700&family=Red+Hat+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
 }
 
 body {
-  background-color: white;
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 /* custom scroll bar */
 body::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px #2294D2;
+    box-shadow: inset 0 0 6px #2294d2;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #2294D2;
-  /* outline: 1px solid #2294D2; */
+    background-color: #2294d2;
+    /* outline: 1px solid #2294D2; */
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 a:hover {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-  margin-left: 0;
-  margin-bottom: none;
+    margin-left: 0;
+    margin-bottom: none;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
-

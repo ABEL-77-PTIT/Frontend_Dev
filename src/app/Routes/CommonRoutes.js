@@ -4,8 +4,9 @@ import Coffee from "../../features/CoffeeShop/pages/Coffee";
 import Home from "../../features/Common/Layout/Home";
 import MyChannel from "../../features/MyChannel/pages/MyChannel";
 import NerdCard from "../../features/NerdCard/pages/NerdCard";
-import CitiAlto from "../../features/CitiAlto/pages/CitiAlto";
 import BlogsManagement from "../../features/MyBlogs/BlogsManagement";
+import NotFoundPage from "../../features/Error/components/NotFound";
+import CitiAltoManagement from "../../features/CitiAlto/CitiAltoManagement";
 const CommonRoutes = () => {
     return (
         <Routes>
@@ -24,10 +25,11 @@ const CommonRoutes = () => {
                     <Route path="nerd_card" element={<NerdCard />} />
                     <Route path="coffee_shop" element={<Coffee />} />
                     <Route path="antube" element={<MyChannel />} />
-                    <Route path="real_estate" element={<CitiAlto />} />
+                    <Route path="real_estate/*" element={<CitiAltoManagement />} />
                     <Route path="blogs/*" element={<BlogsManagement />} />
                 </Route>
             </Route>
+            <Route path="*" element={<NotFoundPage />} />
         </Routes>
     );
 };

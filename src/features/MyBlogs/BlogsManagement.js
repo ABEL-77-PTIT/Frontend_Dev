@@ -17,7 +17,7 @@ const BlogsManagement = () => {
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/write" element={<Write />} />
-                <Route path="/settins" element={<Settings />} />
+                <Route path="/settings" element={<Settings />} />
                 <Route path="/post/:postId" element={<Single />} />
             </Routes>
         </div>
