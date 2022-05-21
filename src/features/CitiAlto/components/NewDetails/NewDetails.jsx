@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./newDetails.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
+import { useParams } from "react-router-dom";
+import { NewsService } from "../../../../app/Services/CitiAlto";
 
-const NewDetails = ({ data }) => {
-console.log(data);
+const NewDetails = () => {
+    const [newDetails, setNewDetails] = useState();
+    const slug = useParams();
+    useEffect(() => {
+        NewsService.news.map((tintuc) => {
+            tintuc.id === slug.id
+                ? setNewDetails({ tintuc })
+                : setNewDetails({});
+            return setNewDetails(tintuc);
+        });
+    }, [slug]);
+
     return (
         <>
             <Header />
@@ -14,7 +26,7 @@ console.log(data);
                         <input type="text" placeholder="XIn chao" />
                     </div>
                     <div>
-                        <h2>BAI VIET MOI</h2>
+                        <h2>BAI VIET MOI,</h2>
                         <div>
                             <div>
                                 <img src="#!" alt="Real Estate" />

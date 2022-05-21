@@ -7,12 +7,13 @@ import NerdCard from "../../features/NerdCard/pages/NerdCard";
 import BlogsManagement from "../../features/MyBlogs/BlogsManagement";
 import NotFoundPage from "../../features/Error/components/NotFound";
 import CitiAltoManagement from "../../features/CitiAlto/CitiAltoManagement";
+
 const CommonRoutes = () => {
     return (
         <Routes>
-            <Route path="/*">
+            <Route path="/">
                 <Route path="" index element={<Home />} />
-                <Route path="auth/*">
+                <Route path="auth">
                     <Route path="login" element={"Login"} />
                     <Route path="register" element={"Register"} />
                     <Route path="forgot_password" element={"ForgotPassword"} />
@@ -21,12 +22,12 @@ const CommonRoutes = () => {
                         element={"RecoveryPassword"}
                     />
                 </Route>
-                <Route path="my/*">
+                <Route path="my">
                     <Route path="nerd_card" element={<NerdCard />} />
                     <Route path="coffee_shop" element={<Coffee />} />
                     <Route path="antube" element={<MyChannel />} />
-                    <Route path="real_estate/*" element={<CitiAltoManagement />} />
-                    <Route path="blogs/*" element={<BlogsManagement />} />
+                    <Route path="real_estate/*" element ={<CitiAltoManagement />} />
+                    <Route path="blogs" element={<BlogsManagement />} />
                 </Route>
             </Route>
             <Route path="*" element={<NotFoundPage />} />
