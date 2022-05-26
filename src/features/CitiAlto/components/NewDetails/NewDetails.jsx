@@ -33,19 +33,19 @@ const NewDetails = () => {
     // khi click vaof ttile sau thi chuyen sang bai viet sau, == total thfi dung lai.
 
     const handleChangeNewsDetailsPrev = (newsDetailsCurrentId) => {
-        if (newsDetailsCurrentId > 1)
+        if (newsDetailsCurrentId >= 0)
             setNewsDetailsPrev(
                 NewsService.news.find(
-                    (tintuc) => tintuc.id === newsDetailsCurrentId - 1
+                    (tintuc) => tintuc.id === newsDetailsCurrentId
                 )
             );
     };
 
     const handleChangeNewsDetailsNext = (newsDetailsCurrentId) => {
-        if (newsDetailsCurrentId < 4)
+        if (newsDetailsCurrentId <= 4)
             setNewsDetailsNext(
                 NewsService.news.find(
-                    (tintuc) => tintuc.id === newsDetailsCurrentId + 1
+                    (tintuc) => tintuc.id === newsDetailsCurrentId
                 )
             );
     };
@@ -159,7 +159,7 @@ const NewDetails = () => {
                                             type="button"
                                             onClick={() =>
                                                 handleChangeNewsDetailsPrev(
-                                                    newsDetails?.id
+                                                    newsDetails?.id - 1
                                                 )
                                             }
                                         >
@@ -171,7 +171,7 @@ const NewDetails = () => {
                                         className="panigation__right"
                                         onClick={() =>
                                             handleChangeNewsDetailsNext(
-                                                newsDetails?.id
+                                                newsDetails?.id + 1
                                             )
                                         }
                                     >
