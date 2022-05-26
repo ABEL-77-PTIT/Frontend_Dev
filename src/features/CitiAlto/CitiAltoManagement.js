@@ -6,10 +6,8 @@ import CitiAlto from "./pages/CitiAlto";
 const CitiAltoManagement = () => {
     return (
         <Routes>
-            <Route path="/">
-                <Route path="" element={<CitiAlto />} />
+                <Route path="/" element={<CitiAlto />} />
                 <Route path=":id" element={<NewDetails />} />
-            </Route>
         </Routes>
     );
 };

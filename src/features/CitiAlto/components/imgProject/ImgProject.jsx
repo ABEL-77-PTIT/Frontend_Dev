@@ -157,7 +157,7 @@ const ImgProject = () => {
                             <Slider {...settingsUtilities}>
                                 {othersUtilities.map((otherUtilities) => {
                                     return (
-                                        <div className="otherUtilities">
+                                        <div key={otherUtilities} className="otherUtilities">
                                             <img
                                                 src={otherUtilities}
                                                 alt="Ảnh nè"

@@ -28,6 +28,4 @@ const news = [
     },
 ];
 
-export {
-    news
-}
+export { news };

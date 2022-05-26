@@ -1,6 +1,7 @@
 .news__details--container {
     width: 1200px;
     margin: auto;
+    padding-bottom: 30px;
 }
 
 .news__details--content {
@@ -12,26 +13,29 @@
 .news__details--navigation {
     flex: 1;
     padding: 0 30px;
-    border-right: 1px solid #ccc;
 }
 
-.search__text {
+.news__details--search-text {
     width: 100%;
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 30px;
 }
 
-.search__text div {
+.news__details--search-text div {
     display: flex;
 }
 
-.search__text div input {
+.news__details--search-text div input {
     border: 1px solid #ccc;
     padding-left: 10px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     width: 100%;
+}
+
+.news__details--search-text div input:focus {
+    outline: none;
 }
 
 .news__details--title h2 {
@@ -76,12 +80,15 @@
     flex: 3;
     border-left: 1px solid #ccc;
     padding-left: 30px;
+    margin-bottom: 30px;
 }
 
 .news__details--details-content {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 40px;
 }
 
 .news__details--details-content:hover {
@@ -110,7 +117,6 @@
     border: 1px solid #ccc;
     margin-left: 25px;
     margin-bottom: 30px;
-
 }
 
 .news__details--details-content img {
@@ -126,14 +132,74 @@
     line-height: 26px;
 }
 
+.news__details--panigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.panigation__left {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 50%;
+    padding: 10px;
+}
+
+.panigation__left button {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.panigation__right {
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    padding: 10px;
+}
+
+.panigation__right button {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.panigation__left button:focus {
+    outline: none;
+}
+
+.panigation__right button:focus {
+    outline: none;
+}
+
+.panigation__icon--left {
+    font-size: 30px;
+    color: #334862;
+}
+
+.panigation__icon--right {
+    font-size: 30px;
+    color: #334862;
+}
 .feedback__title {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1c1c1c;
+    margin-bottom: 15px;
 }
 
 .feedback__button {
     border: none;
-    background-color: #1b76a8;
+    background-color: #2294D2;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 18px;
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.feedback__note {
+    padding-bottom: 15px;
 }

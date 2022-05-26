@@ -4,6 +4,7 @@ import { NewsService } from "../../../../app/Services/CitiAlto";
 import "./news.css";
 
 const News = () => {
+
     return (
         <div className="news" id="news">
             <div className="news__container">
@@ -14,7 +15,6 @@ const News = () => {
                             return (
                                 <div
                                     key={tintuc.id}
-                                    href="#1"
                                     className="news__content--list"
                                 >
                                     <div className="new__content">
@@ -30,9 +30,12 @@ const News = () => {
                                             <h5>{tintuc.title}</h5>
                                             <p>{tintuc.desc}</p>
                                             <Link
-                                                to={`/my/real_estate/${tintuc.id}`}
+                                                to={`/my/real_estate/${tintuc.title}`}
                                             >
-                                                <button className="new__content--button">
+                                                <button
+                                                    type="button"
+                                                    className="new__content--button"
+                                                >
                                                     CHI TIẾT
                                                 </button>
                                             </Link>

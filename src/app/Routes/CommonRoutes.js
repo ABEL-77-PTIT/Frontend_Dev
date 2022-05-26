@@ -7,6 +7,7 @@ import NerdCard from "../../features/NerdCard/pages/NerdCard";
 import BlogsManagement from "../../features/MyBlogs/BlogsManagement";
 import NotFoundPage from "../../features/Error/components/NotFound";
 import CitiAltoManagement from "../../features/CitiAlto/CitiAltoManagement";
+import MainPage from "../../features/PetEcommerce/client/pages/MainPage";
 
 const CommonRoutes = () => {
     return (
@@ -29,6 +30,7 @@ const CommonRoutes = () => {
                     <Route path="real_estate/*" element ={<CitiAltoManagement />} />
                     <Route path="blogs" element={<BlogsManagement />} />
                 </Route>
+                <Route path="pet_shop" element={<MainPage />} />
             </Route>
             <Route path="*" element={<NotFoundPage />} />
         </Routes>
