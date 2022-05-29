@@ -8,47 +8,23 @@ import { NewsService } from "../../../../app/Services/CitiAlto";
 import { BiSearchAlt2 } from "react-icons/bi";
 
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import usePanigateNext from "../usePanigateNext";
+import usePanigatePrev from "../usePanigatePrev";
 
 const getNewSDetailsByTitle = (title) => {
     return NewsService.news.find((tintuc) => tintuc.title === title);
 };
-// const getNewsDetailsPrevPanigation = (newsDetailsCurrentId) => {
-//     return NewsService.news.find((tintuc) => tintuc.id === newsDetailsCurrentId - 1)
-// }
-// const getNewsDetailsNextPanigation = (newsDetailsCurrentId) => {
-//     return NewsService.news.find((tintuc) => tintuc.id === newsDetailsCurrentId + 1)
-// }
+
 const NewDetails = () => {
     const [newsDetails, setNewsDetails] = useState();
-    const [newsDetailsPrev, setNewsDetailsPrev] = useState();
-    const [newsDetailsNext, setNewsDetailsNext] = useState();
     const slug = useParams();
+    const isNewsDetailsNext = usePanigateNext(newsDetails?.id + 1);
+    const isNewsDetailsPrev = usePanigatePrev(newsDetails?.id - 1);
 
     useEffect(() => {
         setNewsDetails(getNewSDetailsByTitle(slug.id));
     }, [slug]);
 
-    //hien thi title la cai truoc vaf sau trang hien tai
-    //khi click vaof title thi chuyen noi dung sang baif viet truoc. neu >= 1 thi dung viec click laij
-    // khi click vaof ttile sau thi chuyen sang bai viet sau, == total thfi dung lai.
-
-    const handleChangeNewsDetailsPrev = (newsDetailsCurrentId) => {
-        if (newsDetailsCurrentId >= 0)
-            setNewsDetailsPrev(
-                NewsService.news.find(
-                    (tintuc) => tintuc.id === newsDetailsCurrentId
-                )
-            );
-    };
-
-    const handleChangeNewsDetailsNext = (newsDetailsCurrentId) => {
-        if (newsDetailsCurrentId <= 4)
-            setNewsDetailsNext(
-                NewsService.news.find(
-                    (tintuc) => tintuc.id === newsDetailsCurrentId
-                )
-            );
-    };
     return (
         <>
             <Header />
@@ -155,30 +131,28 @@ const NewDetails = () => {
                             <nav>
                                 <ul className="news__details--panigation">
                                     <li className="panigation__left">
-                                        <button
-                                            type="button"
-                                            onClick={() =>
-                                                handleChangeNewsDetailsPrev(
-                                                    newsDetails?.id - 1
-                                                )
-                                            }
-                                        >
-                                            <IoIosArrowBack className="panigation__icon--left" />
-                                            <p>{newsDetailsPrev?.title}</p>
-                                        </button>
+                                        {isNewsDetailsPrev ? (
+                                            <Link to={`/my/real_estate/${isNewsDetailsPrev.title}`} className="paginate__link">
+                                                <IoIosArrowBack className="panigation__icon--left" />
+                                                <p>
+                                                    {isNewsDetailsPrev?.title}
+                                                </p>
+                                            </Link>
+                                        ) : (
+                                            "No more posts"
+                                        )}
                                     </li>
-                                    <li
-                                        className="panigation__right"
-                                        onClick={() =>
-                                            handleChangeNewsDetailsNext(
-                                                newsDetails?.id + 1
-                                            )
-                                        }
-                                    >
-                                        <button type="button">
-                                            <p>{newsDetailsNext?.title}</p>
-                                            <IoIosArrowForward className="panigation__icon--right" />
-                                        </button>
+                                    <li className="panigation__right">
+                                        {isNewsDetailsNext ? (
+                                            <Link to={`/my/real_estate/${isNewsDetailsNext.title}`} className="paginate__link">
+                                                <p>
+                                                    {isNewsDetailsNext?.title}
+                                                </p>
+                                                <IoIosArrowForward className="panigation__icon--right" />
+                                            </Link>
+                                        ) : (
+                                            "No more posts"
+                                        )}
                                     </li>
                                 </ul>
                             </nav>

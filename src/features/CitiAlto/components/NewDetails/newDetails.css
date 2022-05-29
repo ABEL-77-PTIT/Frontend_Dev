@@ -145,7 +145,7 @@
     padding: 10px;
 }
 
-.panigation__left button {
+.panigation__left .paginate__link {
     display: flex;
     align-items: center;
     border: none;
@@ -160,18 +160,18 @@
     padding: 10px;
 }
 
-.panigation__right button {
+.panigation__right .paginate__link {
     display: flex;
     align-items: center;
     border: none;
 }
 
-.panigation__left button:focus {
-    outline: none;
+.panigation__left .paginate__link:hover {
+    color: red;
 }
 
-.panigation__right button:focus {
-    outline: none;
+.panigation__right .paginate__link:hover {
+    color: red;
 }
 
 .panigation__icon--left {

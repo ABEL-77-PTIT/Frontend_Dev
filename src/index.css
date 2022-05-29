@@ -2,18 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-    .check-content{
-      @apply mb-[51px] flex gap-8 ml-[70px] mr-[29px] items-center md:mx-0;
+    .check-content {
+        @apply mb-[51px] flex gap-8 ml-[70px] mr-[29px] items-center md:mx-0;
     }
-    .btn-hover{
-      @apply hover:text-purple-500 transition-all duration-200 cursor-pointer
+    .btn-hover {
+        @apply hover:text-purple-500 transition-all duration-200 cursor-pointer;
     }
-    .container{
-      @apply w-[1200px] m-auto;
+    .container {
+        @apply w-[1200px] m-auto;
     }
     .textColorGradient {
-      @apply font-extrabold text-transparent text-32 bg-clip-text bg-gradient-to-r from-purple-600 to-red-600
+        @apply font-extrabold text-transparent text-32 bg-clip-text bg-gradient-to-r from-purple-600 to-red-600;
     }
-  }
+    .thumbnail {
+        @apply w-full h-full duration-500
+        /* width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -ms-transition-duration: 0.5s; */
+    }
+    .thumbnail:hover {
+      @apply scale-125 cursor-pointer
+        /* transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        cursor: pointer; */
+    }
+}

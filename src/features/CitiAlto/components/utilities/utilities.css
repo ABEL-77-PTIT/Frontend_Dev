@@ -28,6 +28,11 @@
     column-gap: 3rem;
     margin-bottom: 30px;
 }
+.utilities__internalArea--img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
 .internalArea__content h3 {
     margin-bottom: 20px;
@@ -93,8 +98,4 @@
     border-radius: 50%;
     font-size: 10px;
     margin-right: 10px;
-}
-
-.utilities__suburbs img {
-    width: 100%;
 }
