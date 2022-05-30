@@ -10,16 +10,14 @@ import { BiSearchAlt2 } from "react-icons/bi";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import usePanigateNext from "../usePanigateNext";
 import usePanigatePrev from "../usePanigatePrev";
-
-const getNewSDetailsByTitle = (title) => {
-    return NewsService.news.find((tintuc) => tintuc.title === title);
-};
+import { getNewSDetailsByTitle, handleSlug } from "../../slugify";
 
 const NewDetails = () => {
     const [newsDetails, setNewsDetails] = useState();
     const slug = useParams();
     const isNewsDetailsNext = usePanigateNext(newsDetails?.id + 1);
     const isNewsDetailsPrev = usePanigatePrev(newsDetails?.id - 1);
+    
 
     useEffect(() => {
         setNewsDetails(getNewSDetailsByTitle(slug.id));
@@ -52,7 +50,7 @@ const NewDetails = () => {
                                             className="news__details--content-title"
                                         >
                                             <Link
-                                                to={`/my/real_estate/${newDetails.title}`}
+                                                to={`/my/real_estate/${handleSlug(newDetails.title)}`}
                                             >
                                                 <div>
                                                     <img
@@ -132,7 +130,7 @@ const NewDetails = () => {
                                 <ul className="news__details--panigation">
                                     <li className="panigation__left">
                                         {isNewsDetailsPrev ? (
-                                            <Link to={`/my/real_estate/${isNewsDetailsPrev.title}`} className="paginate__link">
+                                            <Link to={`/my/real_estate/${handleSlug(isNewsDetailsPrev.title)}`} className="paginate__link">
                                                 <IoIosArrowBack className="panigation__icon--left" />
                                                 <p>
                                                     {isNewsDetailsPrev?.title}
@@ -144,7 +142,7 @@ const NewDetails = () => {
                                     </li>
                                     <li className="panigation__right">
                                         {isNewsDetailsNext ? (
-                                            <Link to={`/my/real_estate/${isNewsDetailsNext.title}`} className="paginate__link">
+                                            <Link to={`/my/real_estate/${handleSlug(isNewsDetailsNext.title)}`} className="paginate__link">
                                                 <p>
                                                     {isNewsDetailsNext?.title}
                                                 </p>

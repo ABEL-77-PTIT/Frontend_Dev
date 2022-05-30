@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { NewsService } from "../../../../app/Services/CitiAlto";
+import { handleSlug } from "../../slugify";
 import "./news.css";
 
 const News = () => {
@@ -30,7 +31,7 @@ const News = () => {
                                             <h5>{tintuc.title}</h5>
                                             <p>{tintuc.desc}</p>
                                             <Link
-                                                to={`/my/real_estate/${tintuc.title}`}
+                                                to={`/my/real_estate/${handleSlug(tintuc.title)}`}
                                             >
                                                 <button
                                                     type="button"
