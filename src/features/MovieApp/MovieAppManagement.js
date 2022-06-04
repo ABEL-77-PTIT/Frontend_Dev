@@ -10,10 +10,11 @@ import { store } from "./features/store";
 import { Provider } from "react-redux";
 // import MovieListing from "./components/MovieListing/MovieListing";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
+import "../../assets/style/MovieApp/App.scss";
 const MovieAppManagement = () => {
     return (
         <Provider store={store}>
-            <div className="app">
+            <div className="movie__app">
                 <Header />
                 <div className="container">
                     <Routes>
