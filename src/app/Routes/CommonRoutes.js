@@ -8,6 +8,7 @@ import BlogsManagement from "../../features/MyBlogs/BlogsManagement";
 import NotFoundPage from "../../features/Error/components/NotFound";
 import CitiAltoManagement from "../../features/CitiAlto/CitiAltoManagement";
 import MainPage from "../../features/PetEcommerce/client/pages/MainPage";
+import MovieAppManagement from "../../features/MovieApp/MovieAppManagement";
 
 const CommonRoutes = () => {
     return (
@@ -31,6 +32,7 @@ const CommonRoutes = () => {
                     <Route path="blogs" element={<BlogsManagement />} />
                 </Route>
                 <Route path="pet_shop" element={<MainPage />} />
+                <Route path="movie_app" element={<MovieAppManagement/>} />
             </Route>
             <Route path="*" element={<NotFoundPage />} />
         </Routes>

@@ -11,8 +11,8 @@ import News from "../components/news/News";
 import Footer from "../components/footer/Footer";
 
 import "../style/app.css";
-import "../../../assets/images/CitiAlto/_variable.css";
-import "../../../assets/images/CitiAlto/style.css";
+import "../../../assets/style/CitiAlto/_variable.css";
+import "../../../assets/style/CitiAlto/style.css";
 const App = () => {
     return (
         <div className="app">
