@@ -8,7 +8,6 @@ import Home from "./components/Home/Home";
 
 import { store } from "./features/store";
 import { Provider } from "react-redux";
-// import MovieListing from "./components/MovieListing/MovieListing";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import "../../assets/style/MovieApp/App.scss";
 const MovieAppManagement = () => {
@@ -19,7 +18,7 @@ const MovieAppManagement = () => {
                 <div className="container">
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/:imdbID" element={<MovieDetail />} />
+                        <Route path="movie/:imdbID" element={<MovieDetail />} />
                     </Routes>
                 </div>
                 <Footer />

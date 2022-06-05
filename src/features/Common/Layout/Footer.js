@@ -6,13 +6,13 @@ const Footer = () => {
         <div className="bg-teal-500 text-white w-full py-2 ">
             <div className="w-full px-2 md:container">
                 <div className="flex flex-col text-center md:flex-row md:justify-between my-2">
-                    <div className="textColorGradient text-36">
-                        <Link to="/" element={<Home />} >APT2</Link>
+                    <div>
+                        <Link to="/" element={<Home />}  className="textColorGradient text-36 hover:text-white" >APT2</Link>
                     </div>
                     <div className="flex flex-col items-center">
                         <p>
                             <b className="mr-2">Email: </b>
-                            <a href="mailto:truonghungan2000@gmail.com">
+                            <a href="mailto:truonghungan2000@gmail.com" className="text-white">
                                 truonghungan2000@gmail.com
                             </a>
                         </p>

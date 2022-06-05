@@ -9,6 +9,7 @@ import NotFoundPage from "../../features/Error/components/NotFound";
 import CitiAltoManagement from "../../features/CitiAlto/CitiAltoManagement";
 import MainPage from "../../features/PetEcommerce/client/pages/MainPage";
 import MovieAppManagement from "../../features/MovieApp/MovieAppManagement";
+import TodoApp from "../../features/TodoApp/TodoAppManagement";
 
 const CommonRoutes = () => {
     return (
@@ -33,6 +34,7 @@ const CommonRoutes = () => {
                 </Route>
                 <Route path="pet_shop" element={<MainPage />} />
                 <Route path="movie_app" element={<MovieAppManagement/>} />
+                <Route path="todo_app" element={<TodoApp />} />
             </Route>
             <Route path="*" element={<NotFoundPage />} />
         </Routes>
