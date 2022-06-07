@@ -14,7 +14,7 @@ export default createSlice({
         statusFilterChange: (state, action) => {
             state.status = action.payload
         },
-        prioritiesFilterChange: (state, action) => {
+        priorityFilterChange: (state, action) => {
             state.priorities = action.payload
         }
     }
