@@ -2,6 +2,12 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import movieApi from "../../../../app/Services/MovieApp/MovieApi";
 import { APIKey } from "../../../../app/Services/MovieApp/MovieApiKey";
 
+//ham createAsyncThunk nhan ve ba tham so, dung de xu ly cac yeu cau bat dong bo nhuw lay du lieuj..
+// a string action type value, khi gennerate thi tao ra redux action type constant
+// => no tao ra 3 loai action type sau: pending, fulfiled, rejected.
+// thus hai la payloadCreator callback => nhan ve laf mot promise().
+//an options obj.
+// su dung .then() .catch() de lay haay la...
 export const fetchAsyncMovies = createAsyncThunk(
     "movies/fetchAsyncMovies",
     async (term) => {
@@ -11,7 +17,7 @@ export const fetchAsyncMovies = createAsyncThunk(
         return response.data;
     }
 );
-
+// return a promise()
 export const fetchAsyncShows = createAsyncThunk(
     "movies/fetchAsyncShows",
     async (term) => {
