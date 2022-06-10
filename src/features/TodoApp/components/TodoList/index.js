@@ -3,14 +3,14 @@ import { Col, Row, Input, Button, Select, Tag } from "antd";
 import { v4 as uuidv4 } from "uuid";
 import Todo from "../Todo";
 import { useDispatch, useSelector } from "react-redux";
-import todoListSlice from "./todosSlice";
+import { addNewTodo } from "./todosSlice";
 import { todosRemainingSelector } from "../../redux/selector";
 
 export default function TodoList() {
     const [todoName, setTodoName] = useState("");
     const [priority, setPriority] = useState("Medium");
-    
-    const todoList = useSelector(todosRemainingSelector)
+
+    const todoList = useSelector(todosRemainingSelector);
 
     const dispatch = useDispatch();
     const inputRef = useRef();
@@ -25,17 +25,19 @@ export default function TodoList() {
 
     const handleAddtodo = () => {
         dispatch(
-            todoListSlice.actions.addTodo({
+            addNewTodo({
                 id: uuidv4(),
                 name: todoName,
                 priority: priority,
                 completed: false,
             })
         );
-        setTodoName("")
+        setTodoName("");
         setPriority("Medium");
         inputRef.current.focus();
     };
+    // const data = useSelector(state => state.todoList.todos)
+    // console.log('[State]', data);
     
     return (
         <Row style={{ height: "calc(100% - 40px)" }}>

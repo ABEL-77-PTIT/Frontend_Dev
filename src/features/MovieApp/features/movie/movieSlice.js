@@ -9,7 +9,7 @@ import { APIKey } from "../../../../app/Services/MovieApp/MovieApiKey";
 //an options obj.
 // su dung .then() .catch() de lay haay la...
 export const fetchAsyncMovies = createAsyncThunk(
-    "movies/fetchAsyncMovies",
+    "movies/fetchAsyncMovies",  //action name
     async (term) => {
         const response = await movieApi.get(
             `?apiKey=${APIKey}&s=${term}&type=movie`

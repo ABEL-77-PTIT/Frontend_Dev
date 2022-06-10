@@ -39,10 +39,7 @@
     color: black;
 }
 
-.new__content {
-}
-
-.new__content img {
+.new__content--img {
     width: 100%;
     object-fit: cover;
     height: 150px;
@@ -51,7 +48,6 @@
     border-radius: 5px;
     /* width: 260px; */
 }
-
 
 .new__content--details h5 {
     font-size: 16px;

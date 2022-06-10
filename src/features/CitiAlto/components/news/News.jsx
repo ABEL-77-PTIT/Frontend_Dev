@@ -19,7 +19,9 @@ const News = () => {
                                     className="news__content--list"
                                 >
                                     <div className="new__content">
-                                        <img src={tintuc.img} alt="" />
+                                        <div className="new__content--img">
+                                        <img src={tintuc.img} alt="" className="thumbnail" />
+                                        </div>
                                         <hr
                                             style={{
                                                 width: "40px",

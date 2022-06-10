@@ -1,14 +1,27 @@
+import { setupServer } from "../../app/Services/TodoApp/fakeApi";
 import { Typography, Divider } from "antd";
 import "./index.css";
 import TodoList from "./components/TodoList";
 import Filters from "./components/Filters";
-import store from "./redux/store";
-import { Provider } from "react-redux";
+import { fetchTodos } from "./components/TodoList/todosSlice";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 const { Title } = Typography;
 
+
+//only done during project development
+if(process.env.NODE_ENV === 'development') {
+    setupServer({ environment: "development" });
+}
+
 function TodoApp() {
+    const dispatch = useDispatch()
+    // Get data Todos in the first run
+    useEffect(() => {
+        dispatch(fetchTodos())
+    })
+
     return (
-        <Provider store={store}>
             <div
                 style={{
                     width: 500,
@@ -29,7 +42,6 @@ function TodoApp() {
                 <Divider />
                 <TodoList />
             </div>
-        </Provider>
     );
 }
 
