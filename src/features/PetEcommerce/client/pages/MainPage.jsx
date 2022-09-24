@@ -3,7 +3,7 @@ import React from "react";
 const MainPage = () => {
     return (
         <>
-            <div>trang chu ve thu cung.</div>
+            <div>trang chu ve thu cung. chia se nhung dieu hay</div>
             <p>
                 <b>Frontend: </b>Reactjs
             </p>
